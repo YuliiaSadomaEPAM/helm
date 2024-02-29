@@ -17,7 +17,7 @@ spec:
     - backendRefs:
       - group: ""
         kind: Service
-        name: {{ include "docclocks.fullname" $ }}
+        name: {{ include "clock.fullname" $ }}
         port: {{ .Values.httproute.port }}
         weight: 1
 {{- end }}
